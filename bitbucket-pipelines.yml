@@ -1,9 +1,12 @@
-script:
-  - pipe: atlassian/ftp-deploy:0.1.0
-    variables:
-      USER: '<admin@taxidelft015.nl>'
-      PASSWORD: '<8oiXHBoa>'
-      SERVER: '<taxidelft015.nl>'
-      REMOTE_PATH: '<string>'
-      # LOCAL_PATH: '<string>' # Optional
-      # DEBUG: '<boolean>' # Optional
+image: samueldebruyn/debian-git
+ 
+pipelines:
+  default:
+    - step:
+        script:
+          - apt-get update
+          - apt-get -qq install git-ftp
+          - git config git-ftp.url ftp://taxidelft015.nl/public_html/wp-content/themes/taxidelft.nl/
+          - git config git-ftp.user $FTP_USERNAME
+          - git config git-ftp.password $FTP_PASSWORD
+          - git ftp push
