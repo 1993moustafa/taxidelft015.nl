@@ -1,0 +1,21 @@
+.navbar-shark {
+	a {
+		color: $white;
+	}
+
+	.navbar-toggler {
+		border: 1px solid white;
+	}
+
+	.nav-item .dropdown{
+		.dropdown-item {
+			color: #000;
+		}
+	}
+
+	.dropdown-menu {
+		margin: 0;
+		border: transparent;
+	}
+
+}

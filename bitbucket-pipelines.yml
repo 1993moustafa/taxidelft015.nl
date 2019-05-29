@@ -1,0 +1,9 @@
+script:
+  - pipe: atlassian/ftp-deploy:0.1.0
+    variables:
+      USER: '<admin@taxidelft015.nl>'
+      PASSWORD: '<8oiXHBoa>'
+      SERVER: '<taxidelft015.nl>'
+      REMOTE_PATH: '<string>'
+      # LOCAL_PATH: '<string>' # Optional
+      # DEBUG: '<boolean>' # Optional
