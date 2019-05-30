@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg">
   <div class="container">
-    <a class="navbar-brand" href="#">Hello World</a>
+    <a class="navbar-brand" href="#">Hello test</a>
     <button class="navbar-toggler border-0 menu btn14" type="button" data-menu="14" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <div class="icon"></div>
     </button>
