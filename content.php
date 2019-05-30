@@ -5,55 +5,6 @@
 <?php endif; ?>
 
 
-
-<div class="bg-gray py-5 my-5">
-  <div class="container container-pricing">
-    <div class="row">
-      <div class="col-12 py-5 text-center">
-        <strong>VEILIG VAN A NAAR B? RIJ MET DELFT TAXI SERVICE MEE!</strong>
-      </div>
-    </div>
-    <div class="row my-5">
-      <div class="col-12 col-md-4">
-        <div class="card border-0 rounded-0 bg-woodsmoke">
-          <div class="icon text-center rounded-circle bg-white">
-            <img src="<?php bloginfo('template_url'); ?>/static/img/taxi.svg" width="45">
-          </div>
-          <div class="card-body pt-5 text-center">
-            <h5 class="card-title my-3">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-dodgerblue rounded-pill">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-4">
-        <div class="card border-0 rounded-0 bg-woodsmoke">
-          <div class="icon text-center rounded-circle bg-white">
-            <img src="<?php bloginfo('template_url'); ?>/static/img/taxi.svg" width="45">
-          </div>
-          <div class="card-body pt-5 text-center">
-            <h5 class="card-title my-3">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-dodgerblue rounded-pill">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-4">
-        <div class="card border-0 rounded-0 bg-woodsmoke">
-          <div class="icon text-center rounded-circle bg-white">
-            <img src="<?php bloginfo('template_url'); ?>/static/img/taxi.svg" width="45">
-          </div>
-          <div class="card-body pt-5 text-center">
-            <h5 class="card-title my-3">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-dodgerblue rounded-pill">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
 <div class="py-5">
   <div class="container container-info">
     <div class="row">
