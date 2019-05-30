@@ -7,50 +7,36 @@
   <div class="bg-shark py-5">
     <div class="container">
       <div class="row">
-        <div class="col-6 col-lg-3">
-          <h5>Meer informatie</h5>
-          <ul class="list-unstyled">
-            <li><a href="">Taxi Schiphol</a></li>
-            <li><a href="">Stadsrit</a></li>
-            <li><a href="">Tarieven</a></li>
-            <li><a href="">Taxibusje</a></li>
-            <li><a href="">Rolstoelvervoer</a></li>
-            <li><a href="">Goedkope taxi/korting</a></li>
-          </ul>
-        </div>
-        <div class="col-6 col-lg-3">
-          <h5>Meer informatie</h5>
-          <ul class="list-unstyled">
-            <li><a href="">Taxi Schiphol</a></li>
-            <li><a href="">Stadsrit</a></li>
-            <li><a href="">Tarieven</a></li>
-            <li><a href="">Taxibusje</a></li>
-            <li><a href="">Rolstoelvervoer</a></li>
-            <li><a href="">Goedkope taxi/korting</a></li>
-          </ul>
-        </div>
-        <div class="col-6 col-lg-3">
-          <h5>Meer informatie</h5>
-          <ul class="list-unstyled">
-            <li><a href="">Taxi Schiphol</a></li>
-            <li><a href="">Stadsrit</a></li>
-            <li><a href="">Tarieven</a></li>
-            <li><a href="">Taxibusje</a></li>
-            <li><a href="">Rolstoelvervoer</a></li>
-            <li><a href="">Goedkope taxi/korting</a></li>
-          </ul>
-        </div>
-        <div class="col-6 col-lg-3">
-          <h5>Meer informatie</h5>
-          <ul class="list-unstyled">
-            <li><a href="">Taxi Schiphol</a></li>
-            <li><a href="">Stadsrit</a></li>
-            <li><a href="">Tarieven</a></li>
-            <li><a href="">Taxibusje</a></li>
-            <li><a href="">Rolstoelvervoer</a></li>
-            <li><a href="">Goedkope taxi/korting</a></li>
-          </ul>
-        </div>
+        <?php if( have_rows('footer', 'option') ): ?>
+          <?php while( have_rows('footer', 'option') ): the_row(); 
+            $h5 = get_sub_field('h5');
+            ?>
+            <div class="col-6 col-lg-3">
+              <h5><?php echo $h5; ?></h5>
+              <?php if( have_rows('list') ): ?>
+                <ul class="list-unstyled">
+                  <?php while( have_rows('list') ): the_row(); ?>
+                    <?php 
+                    $link = get_sub_field('href');
+                    if( $link ): 
+                      $link_url = $link['url'];
+                      $link_title = $link['title'];
+                      $link_target = $link['target'] ? $link['target'] : '_self';
+                  ?>
+                  <li>
+                    <a href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>">
+                      <?php echo esc_html($link_title); ?>
+                    </a>
+                  </li>
+                    <?php endif; ?>
+                  <?php endwhile; ?>
+                </ul>
+              <?php endif; ?>
+
+
+            </div>
+          <?php endwhile; ?>
+        <?php endif; ?>
       </div>
     </div>
   </div>
