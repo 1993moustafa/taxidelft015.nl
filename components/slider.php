@@ -1,7 +1,7 @@
 <div class="slider">
 	<div class="container">
 		<div class="row">
-			<div class="py-5 mt-5 mx-auto">
+			<div class="p-4 py-5 mt-5 mx-auto text-center">
 				<h1><?php the_field('h1', 'option'); ?></h1>
 				<h2><?php the_field('h2', 'option'); ?></h2>
 			</div>
