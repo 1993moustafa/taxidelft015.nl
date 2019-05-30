@@ -1,12 +1,11 @@
-image: samueldebruyn/debian-git
-
 pipelines:
   default:
     - step:
         script:
-        - apt-get update
-        - apt-get -qq install git-ftp
-        - git config git-ftp.url ftp://taxidelft015.nl/public_html/wp-content/themes/taxidelft.nl/
-        - git config git-ftp.user $FTP_USERNAME
-        - git config git-ftp.password $FTP_PASSWORD
-        - git ftp push
+          - apt-get update
+          - apt-get -qq install git-ftp
+          - git config git-ftp.url ftp://taxidelft015.nl/public_html/wp-content/themes/taxidelft.nl/
+          - git config git-ftp.user $FTP_USERNAME
+          - git config git-ftp.password $FTP_PASSWORD
+          - git ftp init
+          
