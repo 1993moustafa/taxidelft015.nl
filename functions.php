@@ -128,3 +128,12 @@ acf_add_options_page( array(
   'icon_url'    => 'dashicons-images-alt2',
   'position' => 7
 ));
+
+acf_add_options_page( array(
+  'page_title' => 'Footer',
+  'menu_title' => 'Footer',
+  'menu_slug' => 'footer',
+  'capability' => 'edit_posts',
+  'icon_url'    => 'dashicons-editor-ul',
+  'position' => 0
+));
