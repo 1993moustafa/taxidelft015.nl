@@ -8414,12 +8414,32 @@ h1, h2, h3,
 .navbar-shark a {
   color: #fff; }
 .navbar-shark .navbar-toggler {
-  border: 1px solid white; }
-.navbar-shark .nav-item .dropdown .dropdown-item {
+  border: none;
+  border-radius: 100px;
+  width: 50px;
+  height: 50px;
+  background-color: #0AB6FF; }
+.navbar-shark .hamburg-icon {
+  width: 25px;
+  height: 2px;
+  background-color: #00577b;
+  margin: 5px auto;
+  display: block; }
+.navbar-shark .menu-item {
+  padding-top: 10px;
+  padding-bottom: 10px; }
+.navbar-shark .nav-item
+.dropdown .dropdown-item {
   color: #000; }
 .navbar-shark .dropdown-menu {
-  margin: 0;
-  border: transparent; }
+  background-color: #0AB6FF;
+  width: 100%;
+  border-radius: 0;
+  border: #0AB6FF; }
+  .navbar-shark .dropdown-menu a {
+    color: #000; }
+.navbar-shark .navbar-nav {
+  margin-left: auto; }
 
 .megamenu-li {
   position: static; }
