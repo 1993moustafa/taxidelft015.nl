@@ -71,7 +71,7 @@
 -->
 
 
-<nav class="navbar navbar-expand-md navbar-shark bg-shark fixed-top p-lg-0" role="navigation">
+<nav class="navbar navbar-expand-md navbar-shark bg-shark p-lg-0" role="navigation">
   <div class="container">
   <!-- Brand and toggle get grouped for better mobile display -->
   <a class="navbar-brand" href="#">Navbar</a>
