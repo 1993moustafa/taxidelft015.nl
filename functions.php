@@ -1,5 +1,12 @@
 <?php
 
+remove_filter('the_content', 'wpautop');
+add_filter('the_content', 'remove_empty_p', 20, 1);
+function remove_empty_p($content){
+    $content = force_balance_tags($content);
+    return preg_replace('#<p>\s*+(<br\s*/*>)?\s*</p>#i', '', $content);
+}
+
 // Register Custom Navigation Walker
 require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
 
@@ -27,7 +34,6 @@ function my_deregister_scripts(){
   wp_deregister_script( 'wp-embed' );
 }
 add_action( 'wp_footer', 'my_deregister_scripts' );
-
 remove_action('wp_head', 'wp_resource_hints', 2);
 add_action( 'after_setup_theme', 'remove_api' );
 add_action( 'wp_enqueue_scripts', 'remove_head_scripts' );
