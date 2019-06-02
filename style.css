@@ -8432,12 +8432,16 @@ h1, h2, h3,
 .dropdown .dropdown-item {
   color: #000; }
 .navbar-shark .dropdown-menu {
-  background-color: #0AB6FF;
-  width: 100%;
+  background-color: #fff;
+  min-width: 100%;
   border-radius: 0;
-  border: #0AB6FF; }
+  border: #fff;
+  margin: 0;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); }
   .navbar-shark .dropdown-menu a {
     color: #000; }
+    .navbar-shark .dropdown-menu a:hover {
+      color: #0AB6FF; }
 .navbar-shark .navbar-nav {
   margin-left: auto; }
 
