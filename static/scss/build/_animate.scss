@@ -1,0 +1,77 @@
+.mypage-alo-phone {
+  margin: auto;
+  position: fixed;
+  left: auto;
+  width: 150px;
+  height: 150px;
+  right: 0;
+  display: block;
+  z-index: 2000;
+}
+
+//colors
+$color_rangoon_green_40_approx: rgba(30, 30, 30, 0.4);
+$color_bondi_blue_approx: #0089b9;
+$color_cerulean_50_approx: rgba(0, 175, 242, 0.5);
+$color_rangoon_green_10_approx: rgba(30, 30, 30, 0.1);
+
+//urls
+$url_0: url('static/img/mobile-call.png');
+
+.animated {
+	animation-duration: 1s;
+	animation-fill-mode: both;
+	&.infinite {
+		animation-iteration-count: infinite;
+	}
+}
+.mypage-alo-ph-circle {
+	width: 90px;
+	height: 90px;
+	top: 12px;
+	left: 12px;
+	position: absolute;
+	background-color: transparent;
+	border-radius: 100%;
+	border: 2px solid $color_rangoon_green_40_approx;
+	opacity: .1;
+	border-color: $color_bondi_blue_approx;
+	opacity: .5;
+}
+.mypage-alo-ph-circle-fill {
+	width: 60px;
+	height: 60px;
+	top: 28px;
+	left: 28px;
+	position: absolute;
+	transition: all 0.2s ease-in-out;
+	border-radius: 100%;
+	border: 2px solid transparent;
+	transition: all .5s;
+	background-color: $color_cerulean_50_approx;
+	opacity: .75 !important;
+}
+.mypage-alo-ph-img-circle {
+	width: 30px;
+	height: 30px;
+	top: 43px;
+	left: 43px;
+	position: absolute;
+	background: $color_rangoon_green_10_approx $url_0 no-repeat center center;
+	border-radius: 100%;
+	border: 2px solid transparent;
+	opacity: .7;
+	transition: all 0.2s ease-in-out;
+	transform-origin: 50% 50%;
+	background-color: $color_bondi_blue_approx;
+	background-size: 70%;
+}
+.tada {
+	animation-name: tada;
+}
+.zoomIn {
+	animation-name: zoomIn;
+}
+.pulse {
+	animation-name: pulse;
+}
