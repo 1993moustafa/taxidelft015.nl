@@ -1,0 +1,18 @@
+.slider {
+	width: 100%;
+	min-height: 500px;
+	background-position: center;
+	background-image: url(static/img/stadhuis-delft.jpg);
+	background-position: center;
+	
+	h1,
+	h2 {
+		color: $white;
+    text-shadow: 3px 3px rgba(0, 0, 0, 0.5);
+	}
+	
+	a { 
+		color: $black;
+		text-decoration: none;
+	}
+}

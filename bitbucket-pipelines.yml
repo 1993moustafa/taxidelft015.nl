@@ -1,0 +1,7 @@
+image: savjee/docker-s3website-git-ftp-deploy
+
+pipelines:
+  default:
+    - step:
+        script:
+          - git ftp init --user $FTP_USERNAME --passwd $FTP_PASSWORD ftp://taxidelft015.nl/public_html/wp-content/themes/taxidelft.nl

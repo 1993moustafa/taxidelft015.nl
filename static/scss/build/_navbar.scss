@@ -1,0 +1,53 @@
+.navbar-shark {
+  a {
+    color: $white;
+  }
+
+  .navbar-toggler {
+    border: none;
+    border-radius: 100px;
+    width: 50px;
+    height: 50px;
+    background-color: $dodgerblue;
+  }
+
+  .hamburg-icon {
+    width: 25px;
+    height: 2px;
+    background-color: #00577b;
+    margin: 5px auto;
+    display: block;
+  }
+
+  .menu-item {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .nav-item
+  .dropdown {
+    .dropdown-item {
+      color: $black;
+    }
+  }
+
+  .dropdown-menu {
+    background-color: $white;
+    min-width: 100%;
+    border-radius: 0;
+    border: $white;
+    margin: 0;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0,.15);
+
+    a {
+      color: $black;
+      &:hover {
+        color: $dodgerblue;
+      }
+    }
+  }
+
+  .navbar-nav {
+    margin-left: auto;
+  }
+}

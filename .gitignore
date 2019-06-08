@@ -1,0 +1,5 @@
+# Gitignore files
+.history/
+style.css.map
+.sass-cache/
+.git-ftp.log

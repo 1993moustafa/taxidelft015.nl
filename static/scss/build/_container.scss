@@ -1,0 +1,57 @@
+.container {
+  max-width: 71.5em;
+  @include make-container;
+
+  a {
+  	color: $white;
+  }
+}
+
+.container-top {
+	color: $white;
+}
+
+.container-fluid-reserveer {
+	img {
+		object-fit: cover;
+	}
+}
+
+.container-pricing {
+	h5, p {
+		color: $white;
+	}
+	
+	.icon {
+		top: -50px;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+
+    img {
+    	position: absolute;
+	    top: 0;
+	    bottom: 0;
+	    right: 0;
+	    left: 0;
+	    margin: auto;
+    }
+	}
+}
+
+.container-info {
+	.icon {
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+	}
+}
+
+
+.container-copyright {
+	color: $white;
+}
