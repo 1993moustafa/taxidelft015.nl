@@ -8445,6 +8445,17 @@ h1, h2, h3,
 .navbar-shark .navbar-nav {
   margin-left: auto; }
 
+@media (max-width: 767.98px) {
+  .call-now {
+    position: absolute;
+    z-index: 100;
+    margin: auto;
+    left: 0;
+    right: -230px;
+    top: -24px;
+    width: 100px;
+    height: 100px; } }
+
 .slider {
   width: 100%;
   min-height: 500px;

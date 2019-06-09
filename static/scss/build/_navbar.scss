@@ -51,3 +51,16 @@
     margin-left: auto;
   }
 }
+
+.call-now {
+  @include media-breakpoint-down(sm) {
+    position: absolute;
+    z-index: 100;
+    margin: auto;
+    left: 0;
+    right: -230px;
+    top: -24px;
+    width: 100px;
+    height: 100px;
+  }
+}
