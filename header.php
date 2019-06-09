@@ -19,7 +19,7 @@
 		<div class="row">
 			<div class="ml-auto p-2">
 				<img 
-					class="mr-1"
+					class="mr-2"
 					src="<?php bloginfo('template_url'); ?>/static/img/whatsapp.svg" 
 					alt="+31 (0)6 40 25 31 34"
 					width="20">
