@@ -8,7 +8,7 @@
     <div class="container">
       <div class="row">
         <?php if( have_rows('footer', 'option') ): ?>
-          <?php while( have_rows('footer', 'option') ): the_row(); 
+          <?php while( have_rows('footer', 'option') ): the_row();
             $h5 = get_sub_field('h5');
             ?>
             <div class="col-6 col-lg-3">
@@ -16,9 +16,9 @@
               <?php if( have_rows('list') ): ?>
                 <ul class="list-unstyled">
                   <?php while( have_rows('list') ): the_row(); ?>
-                    <?php 
+                    <?php
                     $link = get_sub_field('href');
-                    if( $link ): 
+                    if( $link ):
                       $link_url = $link['url'];
                       $link_title = $link['title'];
                       $link_target = $link['target'] ? $link['target'] : '_self';
@@ -44,7 +44,7 @@
     <div class="container container-copyright">
       <div class="row">
         <div class="col-12 text-center">
-          <span>Copyright <?php echo date("Y"); ?> &copy; taxidelft.nl</span>
+          <span>Copyright <?php echo date("Y"); ?> &copy Taxidelft015.nl Alle rechten voorbehouden. Algemene voorwaarden</span>
         </div>
       </div>
     </div>

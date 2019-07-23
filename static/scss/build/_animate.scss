@@ -1,12 +1,12 @@
 .mypage-alo-phone {
   margin: auto;
-  position: fixed;
+  position: absolute;
   left: auto;
   width: 150px;
   height: 150px;
   right: 0;
   display: block;
-  z-index: 2000;
+  z-index: 1;
 }
 
 //colors
